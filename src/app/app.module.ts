@@ -9,7 +9,10 @@ import { GameListComponent } from './game-list/game-list.component';
 
 const appRoutes:Routes=[
   {path:"gameList",
-    component:GameListComponent}]
+    component:GameListComponent},
+  {path:"home",
+    component:HomeComponent}
+]
 
 @NgModule({
   declarations: [
