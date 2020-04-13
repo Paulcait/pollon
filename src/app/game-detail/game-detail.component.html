@@ -1,1 +1,8 @@
-<p>game-detail works!</p>
+<div class="section-container">
+    <section *ngFor="let gameDetail of gameDetails; let i=index" class="section-{{i+1}}">
+        <h1 class="spaced">{{gameDetail.name}}</h1>
+        <h3 class="spaced">Descrizione: </h3>
+        <p class="spaced">{{gameDetail.description}}</p>
+
+    </section>
+</div>
