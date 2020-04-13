@@ -1,8 +1,9 @@
 <div class="section-container">
     <section *ngFor="let game of gameList; let i=index" class="section-{{i+1}}">
-        <h1>{{game.name}}</h1>
-        <h3>Descrizione: </h3>
-        <p>{{game.description}}</p>
+        <h1 class="spaced">{{game.name}}</h1>
+        <h3 class="spaced">Descrizione: </h3>
+        <p class="spaced">{{game.description}}</p>
+        <button class="dettagli"><a routerLink="/gameDetail" routerLinkActive="active">DETTAGLI >></a></button>
     </section>
 
 </div>

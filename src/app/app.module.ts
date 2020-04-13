@@ -6,12 +6,19 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { GameListComponent } from './game-list/game-list.component';
+import { GameDetailComponent } from './game-detail/game-detail.component';
+import { EditGameComponent } from './edit-game/edit-game.component';
+
 
 const appRoutes:Routes=[
   {path:"gameList",
     component:GameListComponent},
   {path:"home",
-    component:HomeComponent}
+    component:HomeComponent},
+  {path:"gameDetail",
+    component:GameDetailComponent},
+  {path:"editGame",
+    component:EditGameComponent}
 ]
 
 @NgModule({
@@ -19,7 +26,10 @@ const appRoutes:Routes=[
     AppComponent,
     MenuComponent,
     HomeComponent,
-    GameListComponent
+    GameListComponent,
+    GameDetailComponent,
+    EditGameComponent
+   
   ],
   imports: [
     BrowserModule,

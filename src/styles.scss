@@ -65,3 +65,23 @@ section p {
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
+.logoHome {
+    font-size: 110px;
+    text-align: center;
+}
+
+.dettagli {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 10px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.spaced {
+    padding-left: 20px;
+    padding-right: 20px;
+}
