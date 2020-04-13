@@ -73,12 +73,24 @@ section p {
 
 .dettagli {
     background-color: black;
-    color: white;
-    border: 0;
     padding: 10px;
+    border: 0;
     float: right;
     margin-right: 10px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.dettagli:active {
+    transform: translateY(2px);
+    ;
+}
+
+.dettagli a {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .spaced {
