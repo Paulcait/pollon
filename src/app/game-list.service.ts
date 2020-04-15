@@ -24,10 +24,11 @@ export class GameListService {
 
   constructor() { }
   getGame(id:number){
-
-    for (let i = 0; i === id; i++) {
-        return this.gameList[id];
-      
+    
+    for (let i = 0; i < this.gameList.length; i++) {      
+          if (this.gameList[i].id === id ) {
+            return this.gameList[i]; 
+          }        
     }
 
   }
