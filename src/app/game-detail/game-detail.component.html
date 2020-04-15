@@ -1,12 +1,12 @@
 <div class="section-container">
-    <section *ngFor="let gameDetail of gameDetails; let i=index" class="section-{{i+1}}">
-        <h1 class="spaced">{{gameDetail.name}}</h1>
+    <section>
+        <h1 class="spaced">{{game?.name}}</h1>
         <h3 class="spaced">Descrizione: </h3>
-        <p class="spaced">{{gameDetail.description}}</p>
+        <p class="spaced">{{game?.description}}</p>
         <h3 class="spaced">Piattaforma: </h3>
-        <p class="spaced">{{gameDetail.piattaforma}}</p>
+        <p class="spaced">{{game?.piattaforma}}</p>
         <h3 class="spaced">Prezzo: </h3>
-        <p class="spaced">{{gameDetail.prezzo}}</p>
+        <p class="spaced">{{game?.prezzo}}</p>
         <button class="dettagli1"><a routerLink="/gameList" routerLinkActive="active">BACK >></a></button>
         <button class="dettagli"><a routerLink="/editGame" routerLinkActive="active">MODIFICA >></a></button>
     </section>

@@ -15,7 +15,7 @@ const appRoutes:Routes=[
     component:GameListComponent},
   {path:"home",
     component:HomeComponent},
-  {path:"gameDetail",
+  {path:"gameDetail/:id",
     component:GameDetailComponent},
   {path:"editGame",
     component:EditGameComponent}
